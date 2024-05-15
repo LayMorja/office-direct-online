@@ -974,7 +974,7 @@ textarea.input {
 .modal-form__checkbox input + label {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.625rem;
   font-weight: 400;
   font-size: 0.75rem;
@@ -4958,6 +4958,18 @@ p._strong {
     padding-bottom: 2.5rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .complete.complete_modal::before {
+    left: auto;
+    right: -45%;
+    bottom: -25%;
+  }
+}
+@media (max-width: 35.99875em) {
+  .complete.complete_modal::before {
+    display: none;
+  }
+}
 @media (max-width: 89.99875em) {
   .complete {
     padding-top: 5rem;
@@ -6204,6 +6216,21 @@ p._strong {
 @media (max-width: 35.99875em) {
   .request__button {
     margin-top: 1.5625rem;
+  }
+}
+
+.complete_modal .complete__title:not(:last-child) {
+  margin-bottom: 0.5625rem;
+}
+.complete_modal .complete__description {
+  max-width: 35.875rem;
+}
+.complete_modal .complete__description:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 61.99875em) {
+  .complete_modal {
+    padding: 2.8125rem 1.5625rem;
   }
 }
 
