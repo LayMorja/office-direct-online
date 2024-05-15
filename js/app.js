@@ -520,7 +520,23 @@
                     prevArrow: this.closest(".row-slider").querySelector(".row-slider__button_prev"),
                     nextArrow: this.closest(".row-slider").querySelector(".row-slider__button_next"),
                     speed: 800,
-                    lazyLoad: "progressive"
+                    lazyLoad: "progressive",
+                    responsive: [ {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }, {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }, {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    } ]
                 });
             }));
             $(".row-slider-3").each((function(slider) {
@@ -530,7 +546,18 @@
                     prevArrow: this.closest(".row-slider-3").querySelector(".row-slider__button_prev"),
                     nextArrow: this.closest(".row-slider-3").querySelector(".row-slider__button_next"),
                     speed: 800,
-                    lazyLoad: "progressive"
+                    lazyLoad: "progressive",
+                    responsive: [ {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }, {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    } ]
                 });
             }));
             $(".cases-slider").each((function(slider) {

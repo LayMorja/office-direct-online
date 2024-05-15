@@ -5,9 +5,9 @@
   <title>Системы хранения</title>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240515125222" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20240515125222" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240515125222" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240515162036" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20240515162036" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240515162036" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -18,6 +18,16 @@
 
 <body>
   <div class="wrapper">
+    <header data-scroll-show class="header">
+      <div class="header__container container">
+        <span class="_blank"></span>
+        <div class="header__logo">
+          <img src="img/direct-logo.svg" alt="Логотип нашей компании" />
+        </div>
+        <button type="button" class="header__icon icon-menu"><span></span></button>
+      </div>
+    </header>
+
     <main class="page">
       <aside class="aside">
         <header class="aside__header">
@@ -131,33 +141,35 @@
           </p>
         </div>
       </section>
-      <section class="page__inner-cards inner-cards">
+      <section class="page__inner-cards inner-cards inner-cards_storage">
         <div class="inner-cards__container container grid-container">
           <div class="grid-6 inner-cards__col">
             <div class="performance inner-cards__card bg-con">
-              <div class="performance__percentage">+67%</div>
-              <h3 class="performance__title">к производительности сотрудников</h3>
+              <h2 class="performance__storage-title middle-title">Помогаем в проектировании</h2>
               <p class="performance__decription">
-                Исследования показывают, что комфортная среда увеличивает работоспособность почти в полтора раза
+                Наши опытные дизайнеры помогут избежать массу ошибок, которые часто встречаются в этой сфере, а так же
+                спроектировать идеальную функциональную систему хранения для ваших сотрудников
               </p>
             </div>
           </div>
           <div class="grid-3 inner-cards__col">
-            <div class="quantity inner-cards__card">
-              <span class="quantity__hours">48 часов</span>
-              <h3 class="quantity__title">Наличие производства</h3>
-              <p class="quantity__description">Это позволяет изготавливать индивидуальные проекты</p>
+            <div class="quantity quantity_transparent inner-cards__card">
+              <span class="quantity__hours">кпд+</span>
+              <h3 class="quantity__title">Максимальная эффективность сотрудников</h3>
+              <p class="quantity__description">
+                сотрудники проще и быстрее взаимодействуют с функцио-нальной частью офиса
+              </p>
             </div>
-            <div class="blank-image inner-cards__card" style="background-image: url(&quot;img/inner-cards/image-inner.png&quot;)">
-              <h3 class="blank-image__title">Наличие собственного производства</h3>
+            <div class="blank-image blank-image_dark inner-cards__card bg-con" style="background-image: url(&quot;img/inner-cards/colors.png&quot;)">
+              <h3 class="blank-image__title">Выбор материалов и цвета окраски</h3>
             </div>
           </div>
           <div class="grid-3 inner-cards__col">
             <div class="icon-card inner-cards__card">
               <svg width="60" height="60">
-                <use xlink:href="img/icons/icons.svg#fill-chair" />
+                <use xlink:href="img/icons/icons.svg#protected" />
               </svg>
-              <h3 class="icon-card__title">Наличие собственного производства</h3>
+              <h3 class="icon-card__title">Проверенный временем производитель</h3>
             </div>
             <div class="quantity quantity_transparent inner-cards__card">
               <span class="quantity__hours">48 часов</span>
@@ -433,10 +445,10 @@
       </label>
     </form>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240515125222" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240515125222" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20240515125222" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/app.min.js?_v=20240515125222"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240515162036" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240515162036" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20240515162036" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.min.js?_v=20240515162036"></script>
 
 </body>
 
