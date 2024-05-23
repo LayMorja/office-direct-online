@@ -5,9 +5,9 @@
   <title>Мой заказ</title>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240523001537" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20240523001537" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240523001537" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240523134926" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20240523134926" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240523134926" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -533,17 +533,47 @@
           <div class="footer__content">
             <h2 class="footer__title inner-title">Наши шоурумы</h2>
             <ul class="footer__list">
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Москва</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Санкт-Петербург</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Волгоград</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Екатеринбург</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Казань</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Красноярск</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Новосибирск</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Нижний Новгород</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Ростов-на-Дону</a></li>
-              <li class="footer__item"><a href="javascript:void(0);" class="footer__link">Уфа</a></li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-1" href="javascript:void(0);" class="footer__link">Москва</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-2" href="javascript:void(0);" class="footer__link">Санкт-Петербург</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-3" href="javascript:void(0);" class="footer__link">Волгоград</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-4" href="javascript:void(0);" class="footer__link">Екатеринбург</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-5" href="javascript:void(0);" class="footer__link">Казань</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-6" href="javascript:void(0);" class="footer__link">Красноярск</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-7" href="javascript:void(0);" class="footer__link">Новосибирск</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-8" href="javascript:void(0);" class="footer__link">Нижний Новгород</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-9" href="javascript:void(0);" class="footer__link">Ростов-на-Дону</a>
+              </li>
+              <li class="footer__item">
+                <a data-fancybox data-src="#location-10" href="javascript:void(0);" class="footer__link">Уфа</a>
+              </li>
             </ul>
+            <div class="footer__image footer__image-1"></div>
+            <div class="footer__image footer__image-2 _active"></div>
+            <div class="footer__image footer__image-3"></div>
+            <div class="footer__image footer__image-4"></div>
+            <div class="footer__image footer__image-5"></div>
+            <div class="footer__image footer__image-6"></div>
+            <div class="footer__image footer__image-7"></div>
+            <div class="footer__image footer__image-8"></div>
+            <div class="footer__image footer__image-9"></div>
+            <div class="footer__image footer__image-10"></div>
           </div>
         </div>
         <div class="footer__lower">
@@ -563,19 +593,19 @@
         <p class="radio-select">
           <span>
             <input type="radio" name="employee-quantity" id="radio_modal_1" value="2" />
-            <label for="radio_modal_1">2</label>
+            <label for="radio_modal_1"><span>2</span></label>
           </span>
           <span>
             <input type="radio" name="employee-quantity" id="radio_modal_2" value="4" checked />
-            <label for="radio_modal_2">4</label>
+            <label for="radio_modal_2"><span>4</span></label>
           </span>
           <span>
             <input type="radio" name="employee-quantity" id="radio_modal_3" value="6" />
-            <label for="radio_modal_3">6</label>
+            <label for="radio_modal_3"><span>6</span></label>
           </span>
           <span>
             <input type="radio" name="employee-quantity" id="radio_modal_4" value="8+" />
-            <label for="radio_modal_4">8+</label>
+            <label for="radio_modal_4"><span>8+</span></label>
           </span>
         </p>
       </label>
@@ -656,10 +686,66 @@
       </label>
     </form>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240523001537" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240523001537" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20240523001537" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/app.min.js?_v=20240523001537"></script>
+
+  <div id="location-1" class="location-modal" style="display: none">
+    <h2 class="location-modal__title middle-title">Шоурум в Москве</h2>
+    <div class="location-modal__item">
+      <div class="location-modal__text _underground">
+        <span>Чкаловская или Спортивная</span>
+      </div>
+      <div class="location-modal__text _location">
+        <span>Красного Курсанта, 25В, бизнес-центр «RED CADET»</span>
+      </div>
+      <div class="location-modal__text _phone">
+        <a href="tel:+78123350777">+7 (812) 335-07-77</a>
+      </div>
+      <div class="location-modal__text _timetable">
+        <span>Пн-Пт: с 10:00 до 18:00</span>
+      </div>
+    </div>
+    <button class="location-modal__button button">
+      <span>Получить предложение</span><span class="button__arrow">→</span>
+    </button>
+  </div>
+
+  <div id="location-2" class="location-modal" style="display: none">
+    <h2 class="location-modal__title middle-title">Шоурумы в Санкт-Петербурге</h2>
+    <div class="location-modal__item">
+      <div class="location-modal__text _underground">
+        <span>Чкаловская или Спортивная</span>
+      </div>
+      <div class="location-modal__text _location">
+        <span>Красного Курсанта, 25В, бизнес-центр «RED CADET»</span>
+      </div>
+      <div class="location-modal__text _phone">
+        <a href="tel:+78123350971">+7 (812) 335-09-71</a>
+      </div>
+      <div class="location-modal__text _timetable">
+        <span>Пн-Пт: с 10:00 до 18:00</span>
+      </div>
+    </div>
+    <div class="location-modal__item">
+      <div class="location-modal__text _underground">
+        <span>Александра Невского</span>
+      </div>
+      <div class="location-modal__text _location">
+        <span>Красного Текстильщика, 10-12, Единый Центр Документов</span>
+      </div>
+      <div class="location-modal__text _phone">
+        <a href="tel:+78123350777">+7 (812) 335-07-77</a>
+      </div>
+      <div class="location-modal__text _timetable">
+        <span>Пн-Пт: с 10:00 до 18:00</span>
+      </div>
+    </div>
+    <button class="location-modal__button button">
+      <span>Получить предложение</span><span class="button__arrow">→</span>
+    </button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240523134926" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240523134926" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20240523134926" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.min.js?_v=20240523134926"></script>
 
 </body>
 

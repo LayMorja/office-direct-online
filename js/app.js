@@ -663,6 +663,31 @@
                 }));
             }));
         }
+        $(".footer__link").mouseenter((function() {
+            $(`.footer__image-2`).removeClass("_active");
+            $(`.footer__image-${$(this).attr("data-src").substring(10)}`).addClass("_active");
+        }));
+        $(".footer__link").mouseleave((function() {
+            $(`.footer__image-${$(this).attr("data-src").substring(10)}`).removeClass("_active");
+            $(`.footer__image-2`).addClass("_active");
+        }));
+        $("a").on("click", (function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top
+                }, 600, (function() {
+                    window.location.hash = hash;
+                }));
+            }
+        }));
+        console.log($("input[type='checkbox'][name='configuration'"));
+        $("input[type='checkbox'][name='configuration'").change((function() {
+            const imageElement = $(this).closest(".complete").find(`img[data-target="${$(this).attr("value")}"]`);
+            console.log($(this).closest("form"));
+            if ($(this).is(":checked") && $(this).attr("value") != "") imageElement.addClass("_active"); else imageElement.removeClass("_active");
+        }));
         menuInit();
         spollers();
         tabs();
