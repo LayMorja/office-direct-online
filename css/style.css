@@ -2087,6 +2087,9 @@ p._strong {
 .hero__title:not(:last-child) {
   margin-bottom: 1.875rem;
 }
+.hero__logo {
+  display: none;
+}
 .hero__slide button,
 .hero__slide a {
   display: inline-flex;
@@ -4869,7 +4872,7 @@ p._strong {
   display: none;
   position: fixed;
   z-index: 20;
-  bottom: 0.125rem;
+  bottom: 0.9375rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1.875rem;
@@ -4907,7 +4910,7 @@ p._strong {
   transition: all 0.4s ease;
 }
 .menu-open .general-navigation {
-  transform: translateX(-50%) translateY(-1.375rem);
+  transform: translateX(-50%) translateY(-0.5625rem);
   transition: transform 0.6s ease;
 }
 .menu-open .general-navigation.hidden {
@@ -5434,6 +5437,13 @@ p._strong {
 @media (max-width: 35.99875em) {
   .hero__buttons {
     display: none;
+  }
+}
+@media (max-width: 35.99875em) {
+  .hero__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
   }
 }
 @media (max-width: 85.37375em) {
